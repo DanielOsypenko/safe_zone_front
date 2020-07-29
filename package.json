@@ -1,22 +1,36 @@
 {
   "name": "safezone",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "safeZone app ",
+  "main": "index.js",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.0",
     "cors": "^2.8.5",
-    "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react": "^16.13.1",
+    "react-scripts": "^3.4.1"
   },
+  "devDependencies": {},
   "scripts": {
     "dev": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "heroku-postbuild": "npm run build "
+    "heroku-postbuild": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielOsypenko/safe_zone_front.git"
+  },
+  "keywords": [
+    "test",
+    "heroku"
+  ],
+  "author": "daniel-doe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielOsypenko/safe_zone_front/issues"
+  },
+  
   "browserslist": {
     "production": [
       ">0.2%",
