@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap-grid.min.css'
+import RequestRegister from "./components/RequestRegister";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className='header'>
+                <a href="https://safe-zone-il.herokuapp.com/login/oauth2/code/google">
+                    <input type="button" value="Login" />
+                </a>
+                <RequestRegister className = 'checkButton'></RequestRegister>
+            </header>
+        </div>
+    );
 }
+
 
 export default App;
