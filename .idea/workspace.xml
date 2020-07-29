@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="997e2403-5b1b-432c-91e1-f849d3c13d03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,12 +112,12 @@
     <state width="1642" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595704524975" />
     <state width="1642" height="267" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595955980586" />
     <state width="1642" height="267" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1596022129731" />
-    <state x="2651" y="279" width="586" height="488" key="find.popup" timestamp="1596021288761">
+    <state x="2651" y="279" width="586" height="488" key="find.popup" timestamp="1596028169293">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="731" y="279" width="586" height="488" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595675795538" />
     <state x="731" y="279" width="586" height="488" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595138993515" />
-    <state x="2651" y="279" width="586" height="488" key="find.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1596021288761" />
+    <state x="2651" y="279" width="586" height="488" key="find.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1596028169293" />
     <state x="762" y="420" key="run.anything.popup" timestamp="1595142155571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
