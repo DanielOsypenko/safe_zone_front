@@ -1,6 +1,6 @@
 import React from "react";
 
-class RequestRegister extends React.Component{
+class RequestRegister extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -17,11 +17,11 @@ class RequestRegister extends React.Component{
         let nam = event.target.name;
         let val = event.target.value;
         let err = '';
-        if (val !== "" && !Number(val)){
+        if (val !== "" && !Number(val)) {
             err = <strong>Your floor and place must be a number</strong>;
         }
-        console.log('nam: '+ nam);
-        console.log("val: "+ val);
+        console.log('nam: ' + nam);
+        console.log("val: " + val);
         this.setState({[nam]: val});
         this.setState({errormessage: err});
 
@@ -35,7 +35,6 @@ class RequestRegister extends React.Component{
     }
 
 
-
     render() {
         return (
             <div>
@@ -45,16 +44,16 @@ class RequestRegister extends React.Component{
                         <input type="number"
                                name='floor'
                                value={this.state.floor}
-                               onChange={this.handleChange} />
+                               onChange={this.handleChange}/>
                     </label>
                     <label>
                         Place:
                         <input type="number"
                                name="place"
                                value={this.state.place}
-                               onChange={this.handleChange} />
+                               onChange={this.handleChange}/>
                     </label>
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="Submit"/>
                     {this.state.errormessage}
                 </form>
             </div>
@@ -66,17 +65,16 @@ function registerUser(floor, place) {
 
     return fetch(`https://safe-zone-il.herokuapp.com/account/register/floor/${floor}/place/${place}`, {
         method: 'POST',
-        headers : {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-            'Cache': 'no-cache',
+        headers: {
+            'Accept': '*',
+            'Content-Type': '*',
             'Access-Control-Request-Method ': '*',
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Credentials': 'true',
             'Access-Control-Allow-Headers': '*',
-           // 'Set-Cookie: cross-site-cookie=*; SameSite=None; Secure'
+            'Set-Cookie': 'cross-site-cookie=*'
         },
-         credentials: 'include'
+        credentials: 'include'
     }).then(response => response.json())
         .then((user) => {
             console.log(user.toString())
