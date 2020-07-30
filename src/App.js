@@ -6,11 +6,12 @@ function App() {
     return (
         <div className="App">
             <header className='header'>
-                <a href="https://safe-zone-il.herokuapp.com/login/oauth2/code/google">
+                <a href="https://safe-zone-il.herokuapp.com/oauth2/authorization/google">
                     <input type="button" value="Login" />
                 </a>
-                <RequestRegister className = 'checkButton'></RequestRegister>
+                {/*<div className="g-signin2" data-onsuccess="onSignIn"/>*/}
             </header>
+            <RequestRegister className = 'checkButton'/>
         </div>
     );
 }
