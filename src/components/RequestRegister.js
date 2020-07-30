@@ -70,9 +70,11 @@ function registerUser(floor, place) {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
             'Cache': 'no-cache',
+            'Access-Control-Request-Method ': '*',
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Credentials': 'true',
-            'Access-Control-Allow-Headers': '*'
+            'Access-Control-Allow-Headers': '*',
+           // 'Set-Cookie: cross-site-cookie=*; SameSite=None; Secure'
         },
          credentials: 'include'
     }).then(response => response.json())
